@@ -29,6 +29,8 @@ public  class UserInterface {
                  }
              }
          }
+
+
      }
 
     void displayMainMenu(){
@@ -45,6 +47,7 @@ public  class UserInterface {
                 │                7 - List ALL vehicles                              │
                 │                8 - Add a vehicle                                  │
                 │                9 - Remove a vehicle                               │
+                │                10 - Sales/Lease                                   │
                 │               99 - Quit                                           │
                 │                                                                   │
                 └───────────────────────────────────────────────────────────────────┘
@@ -143,7 +146,7 @@ public  class UserInterface {
         } catch (Exception e) {
             System.out.println("An error occurred while adding the vehicle. Please try again." + e.getMessage());
         }
-    }
+    } /// WOP change the date to local date
     void removeVehicle(){
         System.out.println("To remove a vehicle from our inventory, please provide the last five digit of the VIN number of the vehicle (e.g., '23456'):");
         int vin = Utilities.PromptForInt("Enter the VIN: ");
