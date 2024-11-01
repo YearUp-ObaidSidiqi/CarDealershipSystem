@@ -1,0 +1,11 @@
+﻿ContractType|Date|ClientName|ClientEmail|VehicleID|Year|Make|Model|Type|Color|Mileage|Price|Deposit|Tax|Fees|TotalCost|Warranty|LeaseMonthlyPayment
+SALE|20240101|Mark Hughes|mark@newyork.com|89234|2005|Toyota|Camry|Sedan|White|157892|3995.00|199.75|200.00|650.00|5044.75|YES|0.00
+LEASE|20240103|Emily Rose|emily@california.com|56283|2022|Honda|Civic|Sedan|Silver|1250|21995.00|10997.50|1539.65|12537.15|348.90
+SALE|20240104|Carlos Martinez|carlos@texas.com|33892|1999|Nissan|Pathfinder|SUV|Green|229135|1595.00|79.75|150.00|445.00|2269.75|NO|0.00
+LEASE|20240106|Sophia Rivera|sophia@florida.com|67895|2023|Ford|Mustang|Coupe|Blue|550|33995.00|16997.50|2379.65|19377.15|562.75
+SALE|20240108|Isaac Bell|isaac@illinois.com|77321|2012|Chevrolet|Malibu|Sedan|Black|98500|6950.00|347.50|250.00|950.00|8497.50|YES|100.00
+LEASE|20240109|Madison Gray|madison@nevada.com|21987|2024|Tesla|Model 3|Sedan|White|100|49995.00|24997.50|3499.50|28497.00|711.25
+SALE|20240110|Hannah Lee|hannah@arizona.com|12345|2010|Jeep|Wrangler|SUV|Yellow|105321|10950.00|547.50|300.00|1395.00|12892.50|NO|0.00
+LEASE|20240111|Lucas King|lucas@georgia.com|90876|2021|BMW|X5|SUV|Gray|4250|59995.00|29997.50|4199.65|34197.15|810.45
+SALE|20240112|Lily Turner|lily@ohio.com|55672|2007|Volkswagen|Jetta|Sedan|Red|150342|4950.00|247.50|275.00|789.00|6261.50|YES|50.00
+LEASE|20240113|Ryan Scott|ryan@maine.com|78412|2022|Mercedes-Benz|E-Class|Sedan|Black|3000|55995.00|27997.50|3905.25|31902.75|758.75

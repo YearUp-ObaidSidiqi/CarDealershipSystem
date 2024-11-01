@@ -1,5 +1,9 @@
 package com.yearup;
 
+import com.yearup.dealership.Dealership;
+import com.yearup.dealership.Vehicle;
+import com.yearup.fileManager.DealershipFileManager;
+
 import java.io.IOException;
 
 public  class UserInterface {

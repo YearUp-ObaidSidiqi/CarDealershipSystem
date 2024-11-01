@@ -1,9 +1,12 @@
-package com.yearup;
+package com.yearup.dealership;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class Dealership {
+
+    ArrayList<Vehicle> vehicles = new ArrayList<Vehicle>();
+
+
     private String name;
     private String address;
     private String phone;
@@ -13,14 +16,9 @@ public class Dealership {
         this.address = address;
         this.phone = phone;
     }
-
-      ArrayList<Vehicle> vehicles = new ArrayList<Vehicle>();
-
     public void addVehicle(int vin, int Year, String Make, String Model, String Type, String Color, int Odometer, double Price) {
         vehicles.add(new Vehicle(vin, Year, Make, Model, Type, Color, Odometer, Price));
     }
-
-
     public ArrayList<Vehicle> getAllVehicles() {
         return vehicles;
     }

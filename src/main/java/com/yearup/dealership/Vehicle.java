@@ -1,4 +1,4 @@
-package com.yearup;
+package com.yearup.dealership;
 
 public class Vehicle {
 

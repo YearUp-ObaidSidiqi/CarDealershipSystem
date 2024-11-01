@@ -1,6 +1,6 @@
 package com.yearup.contracts;
 
-import com.yearup.Vehicle;
+import com.yearup.dealership.Vehicle;
 
 public class SalesContract extends Contract{
 

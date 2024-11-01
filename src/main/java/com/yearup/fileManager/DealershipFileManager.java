@@ -1,4 +1,7 @@
-package com.yearup;
+package com.yearup.fileManager;
+import com.yearup.dealership.Dealership;
+import com.yearup.dealership.Vehicle;
+
 import java.io.*;
 import java.util.regex.Pattern;
 
