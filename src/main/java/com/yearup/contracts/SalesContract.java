@@ -7,22 +7,19 @@ public class SalesContract extends Contract{
     private final double salesTaxRate = 0.05;
     private final int recordingFee = 100;
     private boolean isFinanced;
+
     private double calculateProcessingFee() {
         double price = super.getVehicleSold().getPrice();
         return price > 10000 ? 495 : 295;
     }
 
+    public boolean isFinanced() {
+        return isFinanced;
+    }
+
     public SalesContract(String date, String customerName, String customerEmail, Vehicle vehicleSold, boolean isFinanced) {
         super(date, customerName, customerEmail, vehicleSold);
         this.isFinanced = isFinanced;
-    }
-    public SalesContract() {
-    }
-    public double getSalesTax() {
-        return salesTaxRate;
-    }
-    public int getRecordingFee() {
-        return recordingFee;
     }
 
     @Override /// I still don't know, copied fromm [Ali] extended [Yming]

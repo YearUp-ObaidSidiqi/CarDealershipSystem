@@ -7,6 +7,7 @@ public abstract class Contract {
     private String customerName;
     private String customerEmail;
     private Vehicle vehicleSold;
+
     public Contract(){}
 
     public Contract(String date, String customerName, String customerEmail, Vehicle vehicleSold) {
@@ -14,7 +15,6 @@ public abstract class Contract {
         this.customerName = customerName;
         this.customerEmail = customerEmail;
         this.vehicleSold = vehicleSold;
-
     }
     public String getDate() {
         return date;

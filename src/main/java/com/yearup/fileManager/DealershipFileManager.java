@@ -7,10 +7,8 @@ import java.util.regex.Pattern;
 
 
 public class DealershipFileManager{
-
+    static Dealership dealership;
     public static Dealership ReadVehiclesFromCSV(String fileName) throws IOException {
-        Dealership dealership;
-
             var bufferedReader = new BufferedReader(new FileReader(fileName));
             String input = bufferedReader.readLine();
             String[] token1 = input.split(Pattern.quote("|"));
@@ -31,7 +29,6 @@ public class DealershipFileManager{
             bufferedReader.close();
         return dealership;
     }
-
     public static void writeVehiclesToCSV(Dealership dealership) {
         try (
                 var bufferedWriter = new BufferedWriter(new FileWriter("vehicles.csv"))) {
@@ -55,5 +52,4 @@ public class DealershipFileManager{
             System.out.println(e.getMessage());
         }
     }
-
 }
