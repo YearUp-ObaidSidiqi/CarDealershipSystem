@@ -1,14 +1,13 @@
 package com.yearup.contracts;
 
+import com.yearup.ITextEncodable;
 import com.yearup.dealership.Vehicle;
 
-public abstract class Contract {
+public abstract class Contract implements ITextEncodable {
     private String date;
     private String customerName;
     private String customerEmail;
     private Vehicle vehicleSold;
-
-    public Contract(){}
 
     public Contract(String date, String customerName, String customerEmail, Vehicle vehicleSold) {
         this.date = date;

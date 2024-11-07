@@ -18,12 +18,12 @@ public  class UserInterface {
              displayMainMenu();
              int i = Utilities.PromptForInt("Please select an option (1, 2, 3, 4, 5, 6, 7, 8, 9, 99): ");
              switch (i) {
-                 case 1 -> System.out.println("WOP// Find vehicles within a price range");
-                 case 2 -> System.out.println("WOP// Find vehicles by make / model");
-                 case 3 -> System.out.println("WOP// Find vehicles by year range");
-                 case 4 -> System.out.println("WOP// Find vehicles by color");
-                 case 5 -> System.out.println("WOP// Find vehicles by mileage range");
-                 case 6 -> System.out.println("WOP// Find vehicles by type (car, truck, SUV, van)");
+                 case 1 -> System.out.println("WIP// Find vehicles within a price range");
+                 case 2 -> System.out.println("WI// Find vehicles by make / model");
+                 case 3 -> System.out.println("WIP// Find vehicles by year range");
+                 case 4 -> System.out.println("WIP// Find vehicles by color");
+                 case 5 -> System.out.println("WIP// Find vehicles by mileage range");
+                 case 6 -> System.out.println("WIP// Find vehicles by type (car, truck, SUV, van)");
                  case 7 -> displayAllVehicles();
                  case 8 -> addVehicle();
                  case 9 -> removeVehicle();

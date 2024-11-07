@@ -10,11 +10,6 @@ import java.util.regex.Pattern;
 
 public class ContractFileManager {
 
-    private final ArrayList<Contract> contractStorage;
-    public ContractFileManager() {
-        this.contractStorage = new ArrayList<>();
-    }
-
     public static ArrayList<Contract> getFromCSV(String filename){
         ArrayList<Contract> results = new ArrayList<>();
         try{
@@ -27,40 +22,11 @@ public class ContractFileManager {
                 if(newLine.length >= 16){
                     if(newLine[0].equalsIgnoreCase("SALE")){
 
-                        SalesContract contract = new SalesContract(
-                                newLine[1], // date
-                                newLine[2], // name
-                                newLine[3], //email
-                                new Vehicle(
-                                        Integer.parseInt(newLine[4]), //vin
-                                        Integer.parseInt(newLine[5]), //year
-                                        newLine[6], //make
-                                        newLine[7], //model
-                                        newLine[8], //model
-                                        newLine[9], //color
-                                        Integer.parseInt(newLine[10]), //miles
-                                        Double.parseDouble(newLine[11]) //price
-                                ),
-                                Boolean.parseBoolean(newLine[12])
-                        );
-                        results.add(contract);
+                        results.add(SalesContract.buildFromEncodedData(line));
                     }
                     else if (newLine[0].equalsIgnoreCase("LEASE")){
-                        LeaseContract contract = new LeaseContract(
-                                newLine[1], // date
-                                newLine[2], // name
-                                newLine[3], //email
-                                new Vehicle(
-                                        Integer.parseInt(newLine[4]), //vin
-                                        Integer.parseInt(newLine[5]), //year
-                                        newLine[6], //make
-                                        newLine[7], //model
-                                        newLine[8], // vehicleType
-                                        newLine[9], //color
-                                        Integer.parseInt(newLine[9]), //miles
-                                        Double.parseDouble(newLine[10]) //price
-                                )
-                        );
+
+                        results.add(LeaseContract);
                     }
                     else{
                     }
@@ -113,7 +79,7 @@ public class ContractFileManager {
                             vehicle.getColor(),
                             vehicle.getOdometer(),
                             vehicle.getPrice(),
-                            leaseContract.leasingTerm,             // Lease term (36 months)
+                            leaseContract.getLeasingTerm(),             // Lease term (36 months)
                             leaseContract.getMonthlyPayment(),      // Monthly payment
                             leaseContract.getExpectedEndingValue(), // Expected ending value
                             "",                                     // Placeholder for due at signing (if applicable)

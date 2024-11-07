@@ -1,6 +1,8 @@
 package com.yearup.dealership;
 
-public class Vehicle {
+import com.yearup.ITextEncodable;
+
+public class Vehicle implements ITextEncodable {
 
     private int vin;
     private int year;
@@ -57,6 +59,18 @@ public class Vehicle {
                 this.getColor(),
                 this.getOdometer(),
                 this.getPrice());
+    }
+    @Override
+    public String encode() {
+        return new StringBuilder()
+                .append(this.getVin()).append("|")
+                .append(this.getYear()).append("|")
+                .append(this.getMake()).append("|")
+                .append(this.getModel()).append("|")
+                .append(this.getVehicleType()).append("|")
+                .append(this.getColor()).append("|")
+                .append(this.getOdometer()).append("|")
+                .append(this.getPrice()).toString();
     }
 
 }
